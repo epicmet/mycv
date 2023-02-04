@@ -4,7 +4,7 @@ import { UsersController } from './users.controller';
 import { UsersService } from './users.service';
 import { User } from './user.entity';
 import { AuthService } from './auth.service';
-import { CurrentUserMiddleware } from 'src/middlewares/current-user.middleware';
+import { CurrentUserMiddleware } from '../middlewares/current-user.middleware';
 
 @Module({
   imports: [TypeOrmModule.forFeature([User])],
